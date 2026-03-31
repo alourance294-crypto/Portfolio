@@ -75,13 +75,3 @@ Administration (Faculty Assistant)
 - Email: vukuzan@cput.ac.za
 
 ---
-
-## Mock Interview Video
-
-A short video introduction of myself, demonstrating my communication skills
-and personality in a mock interview setting.
-
-<video width="640" height="360" controls>
-  <source src="mock_interview.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
