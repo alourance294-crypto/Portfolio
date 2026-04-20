@@ -110,7 +110,7 @@ Administration (Faculty Assistant)
 
 **Action:** I created a repository named `andilenhleko.github.io` (matching my GitHub username). I uploaded my `README.md` and any images to the main branch. Then I went to Settings > Pages, selected "Deploy from branch" under source, chose the `main` branch with `/root` folder, and saved. I waited approximately 2 minutes for the GitHub Actions build to complete.
 
-**Result:** My portfolio is now live at [https://andilenhleko.github.io](https://github.com/alourance294-crypto). I can share this URL on my CV and LinkedIn. I learned how static site hosting works and gained confidence with GitHub's deployment tools.
+**Result:** My portfolio is now live at [https://andilenhleko.github.io]( https://alourance294-crypto.github.io/Portfolio/). I can share this URL on my CV and LinkedIn. I learned how static site hosting works and gained confidence with GitHub's deployment tools.
 
 ---
 
