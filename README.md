@@ -118,7 +118,9 @@ Administration (Faculty Assistant)
 
 Below is my mock interview video demonstrating my communication skills and technical knowledge.
 
-[Mock Interview Video](https://youtube.com/shorts/EJrncQMGuf0?feature=share)
+## 🎥 Demo Video
 
-*If the thumbnail does not load, click the link above to watch the video.*
+Click the image below to watch my demo.
+
+[![Demo Video](https://img.youtube.com/vi/EJrncQMGuf0/hqdefault.jpg)](https://www.youtube.com/shorts/EJrncQMGuf0)
 
