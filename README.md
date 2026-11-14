@@ -137,12 +137,12 @@ Click the image below to watch my demo.
 **Shared Purpose**  
 Our goal was to design and build UniMarket, a verified student-to-student marketplace for Cape Peninsula University of Technology (CPUT) students to safely buy and sell affordable textbooks, laptops, and study essentials.
 
-**Team Members and Focus Areas**  
-* **Andile Nhleko (AN) – Frontend & UI/UX:** Designed the wireframes and built the React + Vite pages, responsive layouts, navigation, product browsing, search bar, and user profile screens.
-* **Aliziwe Ncoko (AN) – User Research & Content:** Led the student survey, analyzed user feedback, created user personas, wrote Help Center content, and structured presentation slides.
-* **Lihle Tuta (LT) – Backend & Database:** Set up the Node.js and Express server, designed the MySQL database tables, and built the REST API endpoints.
-* **Ntotole Mpalakane (NM) – Security & Integrations:** Integrated Brevo SMTP for 6-digit student email verification, set up PayFast payments, handled password/code hashing, and built the meetup code logic.
-* **Xolile Ludidi (XL) – Testing, QA & Trello Management:** Managed our Trello board, wrote test cases, tested features across devices, and tracked bug fixes before demos.
+**Team Members and Roles**  
+* **Xolile Ludidi (XL) – Team Leader:** Coordinated team schedules, managed our Trello board, tracked sprint progress, and kept deliverables on schedule.
+* **Andile Nhleko (AN) – Researcher (and Frontend/UI Implementation):** Led student needs and competitor research, helped shape user stories, and built the React + Vite frontend pages and responsive layouts.
+* **Karabo Mpalakane (NM) – Writer/Editor (and Documentation/Integrations):** Wrote and edited project documentation, Help Center content, and structured our technical specifications and backend integrations.
+* **Aliziwe Ncoko (AN) – Presenter (and User Engagement):** Led pitch structure, slide refinement, live demo walkthroughs, and incorporated peer review feedback.
+* **Lihle Tuta (LT) – Designer (and System/UI Architecture):** Created wireframes, visual design system tokens, layouts, and backend/database structural design[cite: 1, 10].
 
 **Working Agreements**  
 * **Daily Check-Ins:** Quick 15-minute standups every morning at 09:00 to share progress and flag blockers early.
@@ -150,7 +150,7 @@ Our goal was to design and build UniMarket, a verified student-to-student market
 * **Task Tracking:** Every task had to be logged on Trello and moved across `Product Backlog`, `In progress`, and `Completed`.
 * **Decision Making:** Any disagreement on design or features was settled by checking our survey findings and voting as a group within 24 hours.
 
-![Agile Team Charter](./team-charter.png)
+![Agile Team Charter](https://github.com/user-attachments/assets/a6c13649-230b-4c12-bd20-684a4e724503)
 
 ### Agile Team Charter: Reflection
 Putting our Team Charter together early helped us avoid confusion once coding started. In Week 1, we struggled with late replies in our group chat and different versions of our presentation slides floating around. Going back to our charter rules—especially the 09:00 daily check-ins and keeping all tasks on Trello—made a big difference by Week 3. Because each person owned a clear area of the project, we could build the frontend, backend, and security features at the same time without overwriting each other's work.
