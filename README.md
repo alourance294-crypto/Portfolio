@@ -150,7 +150,7 @@ Our goal was to design and build UniMarket, a verified student-to-student market
 * **Task Tracking:** Every task had to be logged on Trello and moved across `Product Backlog`, `In progress`, and `Completed`.
 * **Decision Making:** Any disagreement on design or features was settled by checking our survey findings and voting as a group within 24 hours.
 
-![Agile Team Charter](./team-charter)
+![Agile Team Charter](./team-charter.png)
 
 ### Agile Team Charter: Reflection
 Putting our Team Charter together early helped us avoid confusion once coding started. In Week 1, we struggled with late replies in our group chat and different versions of our presentation slides floating around. Going back to our charter rules—especially the 09:00 daily check-ins and keeping all tasks on Trello—made a big difference by Week 3. Because each person owned a clear area of the project, we could build the frontend, backend, and security features at the same time without overwriting each other's work.
