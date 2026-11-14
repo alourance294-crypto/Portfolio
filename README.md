@@ -356,4 +356,4 @@ Breaking the work into short sprints kept us focused on clear weekly goals inste
 * **Impediments:** None.
 
 ### Agile Logbook: Reflection
-Writing daily standup entries helped us spot problems early instead of letting them pile up before presentations. Looking back across the five weeks, I can see clear progress—from early communication hiccups in Week 1 and mobile CSS issues in Week 3, to smoothly integrating Brevo email verification and PayFast payments in Week 4. Recording our blockers each day forced us to solve technical issues immediately, and acting on peer feedback in Week 2 turned UniMarket into a much stronger, safer product for students.
+Writing daily standup entries helped us spot problems early instead of letting them pile up before presentations. Looking back across the five weeks, I can see clear progress from early communication hiccups in Week 1 and mobile CSS issues in Week 3, to smoothly integrating Brevo email verification and PayFast payments in Week 4. Recording our blockers each day forced us to solve technical issues immediately, and acting on peer feedback in Week 2 turned UniMarket into a much stronger, safer product for students.
