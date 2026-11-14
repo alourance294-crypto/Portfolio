@@ -123,255 +123,237 @@ Below is my mock interview video demonstrating my communication skills and techn
 Click the image below to watch my demo.
 
 [![Demo Video](https://img.youtube.com/vi/EJrncQMGuf0/hqdefault.jpg)](https://www.youtube.com/shorts/EJrncQMGuf0)
-# PRP37XS Agile Logbook 
 
-**Project:** UniMarket – CPUT Student Marketplace  
+# PRP370S Digital Agile Portfolio – UniMarket 
 **Date Range:** 14 July – 23 October 2026  
-**Tech Stack:** React 18 + Vite | Node.js + Express | MySQL  
+**Tech Stack:** React 18 + Vite, Node.js + Express, MySQL, Brevo SMTP, PayFast  
 
 ---
 
-## 📅 Week 1: Presentation Preparation & Initial Pitch (14 – 17 July 2026)
+## 1. Agile Team Charter
 
-### Tuesday, 14 July 2026
-**1. What did I complete since the last standup?**  
-Our team came together to kick off prep work for the UniMarket presentation. We reviewed our slides as a group, split up the speaking parts, and ensured everyone was aligned on their responsibilities.
+### Agile Team Charter: Evidence
 
-**2. What am I planning to complete between now and the next standup?**  
-I will finish writing my section, practice presenting it until I feel comfortable, and check in with the team to confirm we are all aligned.
+**Shared Purpose**  
+Our goal was to design and build UniMarket, a verified student-to-student marketplace for Cape Peninsula University of Technology (CPUT) students to safely buy and sell affordable textbooks, laptops, and study essentials.
 
-**3. What are my impediments (or risks or problems)?**  
-Getting everyone to respond on time has been a struggle—some messages got lost in the group chat. We also had minor issues with slide formatting when sharing the file back and forth.
+**Team Members and Focus Areas**  
+* **Andile Nhleko (AN) – Frontend & UI/UX:** Designed the wireframes and built the React + Vite pages, responsive layouts, navigation, product browsing, search bar, and user profile screens.
+* **Aliziwe Ncoko (AN) – User Research & Content:** Led the student survey, analyzed user feedback, created user personas, wrote Help Center content, and structured presentation slides.
+* **Lihle Tuta (LT) – Backend & Database:** Set up the Node.js and Express server, designed the MySQL database tables, and built the REST API endpoints.
+* **Ntotole Mpalakane (NM) – Security & Integrations:** Integrated Brevo SMTP for 6-digit student email verification, set up PayFast payments, handled password/code hashing, and built the meetup code logic.
+* **Xolile Ludidi (XL) – Testing, QA & Trello Management:** Managed our Trello board, wrote test cases, tested features across devices, and tracked bug fixes before demos.
 
-### Wednesday, 15 July 2026
-**1. What did I complete since the last standup?**  
-I finished my part of the slides and worked with my teammates to tighten up the entire presentation. We rehearsed several times and ensured all key points came through clearly.
+**Working Agreements**  
+* **Daily Check-Ins:** Quick 15-minute standups every morning at 09:00 to share progress and flag blockers early.
+* **GitHub Workflow:** Everyone worked on separate branches in our shared repository and tested changes before merging into `main`.
+* **Task Tracking:** Every task had to be logged on Trello and moved across `Product Backlog`, `In progress`, and `Completed`.
+* **Decision Making:** Any disagreement on design or features was settled by checking our survey findings and voting as a group within 24 hours.
 
-**2. What am I planning to complete between now and the next standup?**  
-My goal is to deliver my section with confidence, support my teammates, and step in if anyone needs help during the actual presentation.
+![Agile Team Charter](./team-charter.png)
 
-**3. What are my impediments (or risks or problems)?**  
-It was difficult to get everyone together for a full run-through because our timetables didn't align. We also had frustrating moments with tech files not opening properly.
-
-### Thursday, 16 July 2026
-**1. What did I complete since the last standup?**  
-We presented the UniMarket app to the class. We walked through how the platform makes student trading easier and safer. I covered my designated portion and helped keep the energy up while my teammates presented.
-
-**2. What am I planning to complete between now and the next standup?**  
-I want to reflect on the experience and identify what I can do differently next time—both in presenting and collaborating.
-
-**3. What are my impediments (or risks or problems)?**  
-Although we got through it, I can't ignore the technical bumps and communication mix-ups during preparation. It made the process more stressful than it needed to be.
-
-### Friday, 17 July 2026
-**1. What did I complete since the last standup?**  
-I reflected on how the presentation went and debriefed with the team. We agreed that despite a few rocky moments, we delivered a solid presentation and should be proud.
-
-**2. What am I planning to complete between now and the next standup?**  
-I want to work on my time management, speak up more clearly during team discussions, and start preparing earlier to avoid last-minute rushing.
-
-**3. What are my impediments (or risks or problems)?**  
-No real blockers. The biggest lesson is that we need to be more proactive with planning and keep communication flowing to avoid last-minute technical headaches.
+### Agile Team Charter: Reflection
+Putting our Team Charter together early helped us avoid confusion once coding started. In Week 1, we struggled with late replies in our group chat and different versions of our presentation slides floating around. Going back to our charter rules—especially the 09:00 daily check-ins and keeping all tasks on Trello—made a big difference by Week 3. Because each person owned a clear area of the project, we could build the frontend, backend, and security features at the same time without overwriting each other's work.
 
 ---
 
-## 📅 Week 2: Feedback, Redesign & Second Presentation (21 – 24 July 2026)
+## 2. User Stories and Tasks
 
-### Tuesday, 21 July 2026
-**1. What did I complete since the last standup?**  
-Our team regrouped and reviewed all the peer feedback from the UniMarket presentation. We started updating our slides based on the suggestions and began researching how to make our website concept more user-friendly and unique.
+### User Stories and Tasks: Evidence
 
-**2. What am I planning to complete between now and the next standup?**  
-I plan to finish updating my section of the presentation with the feedback received. I also want to research design trends and brainstorm unique features that will make UniMarket stand out.
+We wrote our user stories from the perspective of CPUT students and broke each one into smaller checklist items on our Trello cards:
 
-**3. What are my impediments (or risks or problems)?**  
-No major blockers. The main challenge is incorporating all the valuable feedback without overloading the presentation with too much information.
+* **Student Verification (US-01):** As a CPUT student, I want to register and verify my account using a 6-digit email code so that I know I am dealing with real students.  
+  * *Tasks (Authentication System – 17/17 completed):* Design signup flow, build login and signup forms, validate email and password inputs, encrypt passwords, send hashed 6-digit codes via Brevo SMTP, build auth APIs, and test login/logout sessions.
+* **Browsing and Searching (US-02):** As a student buyer, I want to search and filter items by category and price so that I can quickly find affordable textbooks and laptops.  
+  * *Tasks (Marketplace Functionality – 18/18 completed):* Build product listing and detail pages, add search bar, create category and price filters, connect product APIs, and test mobile responsiveness.
+* **Managing Listings (US-03):** As a student seller, I want to upload, edit, and remove my own listings with photos so that I can sell items I no longer need.  
+  * *Tasks (Frontend & Marketplace – 36/36 completed):* Create upload form, build edit and delete actions, connect upload endpoints to MySQL, and test image uploads.
+* **In-App Messaging (US-04):** As a buyer or seller, I want to message the other person inside UniMarket so that we can arrange safe campus meetups without sharing private numbers.  
+  * *Tasks (Integration – 18/18 completed):* Build chat screen, create message database model, connect chat routes to frontend, and verify message delivery.
+* **Secure Checkout and Meetup Code (US-05):** As a buyer, I want to pay through PayFast and get a 6-digit meetup code so that my payment is recorded safely before the handover.  
+  * *Tasks (API Design & Backend – 35/35 completed):* Create order model, connect PayFast API callbacks, generate hashed 6-digit meetup codes, and test payment status updates.
+* **Seller Ratings (US-06):** As a student user, I want to rate and review sellers after a completed purchase so that reliable traders build trust on campus.  
+  * *Tasks (Marketplace Functionality – 18/18 completed):* Create review model, build rating UI, and restrict reviews to verified completed orders.
+* **Admin Oversight (US-07):** As an administrator, I want a dashboard to view verification logs and manage users so that the platform stays safe.  
+  * *Tasks (Backend & Testing – 35/35 completed):* Add role-based access middleware, build admin endpoints, and test user/verification management.
 
-### Wednesday, 22 July 2026
-**1. What did I complete since the last standup?**  
-I finished updating my part of the presentation and shared it with the team. We held a productive brainstorming session and generated ideas such as a rating system, a chat function, and a clean navigation layout.
+![Trello User Story and Tasks](./trello-user-stories.png)
 
-**2. What am I planning to complete between now and the next standup?**  
-I want to start sketching rough wireframes and research what makes e-commerce platforms feel intuitive and welcoming. I'll also check in with teammates to see if they need help.
-
-**3. What are my impediments (or risks or problems)?**  
-We're still determining which features are doable and which are too complex for our current skill level. We need to be realistic about what we can show in the presentation.
-
-### Thursday, 23 July 2026
-**1. What did I complete since the last standup?**  
-I created basic wireframe sketches for the website layout and shared them with the team for input. We refined our unique selling points—focusing on making UniMarket feel safe, simple, and student-friendly.
-
-**2. What am I planning to complete between now and the next standup?**  
-I want to polish the wireframes into cleaner digital versions and help teammates finalize their content. We also need to rehearse the updated presentation to ensure everything flows well.
-
-**3. What are my impediments (or risks or problems)?**  
-Time management is becoming a small concern—we have a lot of new content to cover. We also need to agree on a consistent design style for the website mockups.
-
-### Friday, 24 July 2026
-**1. What did I complete since the last standup?**  
-I finalized the digital wireframes and incorporated team feedback. We completed the updated presentation slides and did a full run-through. Our presentation now clearly shows how UniMarket will be user-friendly and unique, featuring user ratings, in-app messaging, and a simple interface.
-
-**2. What am I planning to complete between now and the next standup?**  
-I want to practice my delivery once more and prepare backup points in case we get questions during the presentation.
-
-**3. What are my impediments (or risks or problems)?**  
-No major issues. We're all feeling good about the improvements. I just want to ensure we don't get too nervous when presenting again.
+### User Stories and Tasks: Reflection
+Writing user stories from a student's point of view kept us focused on real problems—like avoiding scams and finding cheaper study gear—instead of adding unnecessary features. Breaking each story into small Trello checklist items made bigger features like PayFast integration and email verification feel much less overwhelming. It also helped us realize in Week 2 which features were realistic for our skill level and allowed us to assign tasks based on what each teammate was best at.
 
 ---
 
-## 📅 Week 3: Development Sprint 1 – Building the Core Website (28 – 31 July 2026)
+## 3. Product Backlog
 
-### Tuesday, 28 July 2026
-**1. What did I complete since the last standup?**  
-Our team kicked off the website development phase. We divided coding tasks based on strengths. I was assigned front-end design and the product listing page. We also set up our development environment and created a shared repository.
+### Product Backlog: Evidence
 
-**2. What am I planning to complete between now and the next standup?**  
-I plan to complete the basic homepage structure and start the product listing page. I also want to ensure the navigation bar is fully functional and links to all main sections.
+Our Product Backlog consisted of 16 prioritized Trello cards covering research, design, development, testing, and deployment. Security and core marketplace functions were prioritized first, and all 16 cards reached 100% checklist completion:
 
-**3. What are my impediments (or risks or problems)?**  
-We're still getting used to working together on the same codebase. A few of us had trouble setting up the development environment, but we resolved it. We also need to ensure we're all using the same coding standards.
+1. **Discovery & Research (19/19):** Defined project goals, scope, target users, competitor comparison, user personas, and user journeys.
+2. **Conduct Survey & Data Collection (18/18):** Created the student survey, shared links, collected responses, removed duplicates, and organized preferences.
+3. **Data Analysis & Insights (16/16):** Analyzed buying and selling habits, identified student pain points, and summarized feature recommendations.
+4. **UX & UI Design (19/19):** Chose our color palette and typography, designed the logo, and created screen designs for login, signup, home, marketplace, chat, profile, and checkout.
+5. **Wireframes & Prototyping (18/18):** Sketched and digitized wireframes for all 12 screens, linked user flows, and tested navigation.
+6. **UI Design System (18/18):** Created reusable buttons, cards, forms, icons, spacing rules, and accessibility checks.
+7. **System Architecture (18/18):** Mapped out our frontend, backend, and MySQL database layers, data flow diagrams, and security structure.
+8. **API Design & Planning (18/18):** Planned all GET, POST, PUT, and DELETE endpoints, request/response formats, validation rules, and error handling.
+9. **Backend Development (17/17):** Configured Express, connected MySQL, built User, Product, Category, Message, Order, and Review models, and tested routes.
+10. **Frontend Development (18/18):** Built the React + Vite pages, navigation bar, reusable components, API connections, and responsive layouts.
+11. **Authentication System (17/17):** Built registration, login, logout, password reset, input validation, password hashing, and Brevo 6-digit email verification.
+12. **Marketplace Functionality (18/18):** Implemented product listings, uploads, search, category/price filters, favorites, and ratings/reviews.
+13. **Integration (18/18):** Connected the React frontend to the Express backend, MySQL database, chat module, and PayFast checkout flow.
+14. **Testing & Debugging (18/18):** Executed test cases for login, uploads, search, filters, chat, and APIs, logged bugs, and retested fixes.
+15. **Deployment Preparation (18/18):** Configured environment variables, hosted the live build on Netlify, verified SSL and database backups, and ran security checks.
+16. **Final Presentation & Submission (18/18):** Built presentation slides, added system diagrams and screenshots, rehearsed our demo, and submitted project files.
 
-### Wednesday, 29 July 2026
-**1. What did I complete since the last standup?**  
-I completed the homepage layout and the product listing page. I added a search bar so users can easily find items. I started working on the product detail page and ensured design consistency across all pages.
-
-**2. What am I planning to complete between now and the next standup?**  
-I want to finish the product detail page and start on the user registration and login pages. I also need to test the website on different devices to ensure it is fully responsive.
-
-**3. What are my impediments (or risks or problems)?**  
-I ran into CSS styling issues—some elements weren't aligning properly on mobile screens. I also had trouble getting the search bar to work correctly. I'll need to spend time debugging.
-
-### Thursday, 30 July 2026
-**1. What did I complete since the last standup?**  
-I finished the product detail page and the user registration and login pages. I fixed the CSS issues and made the website fully responsive. The search bar now works properly. I also helped a teammate with the chat feature integration.
-
-**2. What am I planning to complete between now and the next standup?**  
-I want to test all website features thoroughly to ensure everything works correctly. I also need to help teammates with any bugs and start preparing for the final presentation.
-
-**3. What are my impediments (or risks or problems)?**  
-We're facing bugs with the chat feature and user authentication. Sometimes users can't log in properly, and chat messages don't always show up in real-time. We need to fix these before the final presentation.
-
-### Friday, 31 July 2026
-**1. What did I complete since the last standup?**  
-We fixed all major bugs and tested the entire website thoroughly. The website is now fully functional—users can register, log in, browse products, search for items, chat with sellers, and list their own items for sale. We also updated our presentation to include a live demo.
-
-**2. What am I planning to complete between now and the next standup?**  
-I want to practice our presentation once more and ensure we're all confident with the live demo. I'll also prepare answers to potential questions about the website's features and how we built it.
-
-**3. What are my impediments (or risks or problems)?**  
-No major issues right now. We're all excited to show off our working website. The only concern is ensuring the live demo goes smoothly without unexpected technical glitches.
-
----
-
-## 📅 Week 4: Development Sprint 2 – Security Hardening & Payment Integration (4 – 7 August 2026)
-
-### Tuesday, 4 August 2026
-**1. What did I complete since the last standup?**  
-Since the core website is already fully functional, I shifted focus to enhancing the existing UI/UX. I refined the navigation bar for seamless routing across all live sections and optimized the search bar algorithm so users can filter through the active product database more efficiently.
-
-**2. What am I planning to complete between now and the next standup?**  
-My focus is on polishing the product detail page and ensuring the existing user login and registration flows are perfectly responsive on all mobile devices. I will also begin mapping out integration points for the new secure email verification system.
-
-**3. What are my impediments (or risks or problems)?**  
-The main challenge is ensuring new code commits don't break existing stable features. We are establishing stricter coding standards to manage the shared codebase. Minor CSS adjustments are needed on legacy mobile screens, but nothing is blocking progress.
-
-### Wednesday, 5 August 2026
-**1. What did I complete since the last standup?**  
-I finalized the product detail layouts and confirmed the cart and checkout UI are fully responsive. The existing search functionality is now optimized. As a group, we reviewed the current live site and are making good progress on planning the new secure features.
-
-**2. What am I planning to complete between now and the next standup?**  
-I need to build out the expanded user profile settings (Address, Preferences) and lay the groundwork for the new payment gateway integration. We also need to finalize the architecture for the secure student email verification system.
-
-**3. What are my impediments (or risks or problems)?**  
-We are evaluating the best approach for real-time chat updates without causing server overload. We are also in the planning phase for payment integration, ensuring our existing order database structure can handle real transaction IDs.
-
-### Thursday, 6 August 2026
-**1. What did I complete since the last standup?**  
-I expanded the user profile pages with new settings options. Most importantly, I successfully integrated Brevo SMTP for our new secure email verification system. New users now receive a 6-digit code generated and hashed on our backend, ensuring only verified CPUT students can access the marketplace. I also started upgrading the admin dashboard to manage these new verification logs.
-
-**2. What am I planning to complete between now and the next standup?**  
-I plan to finalize the integration of the PayFast payment gateway to replace the simulated checkout, allowing real transactions. I also need to complete the 6-digit meetup code generator for safe physical exchanges and ensure all sensitive data—including verification codes and user passwords—are cryptographically hashed.
-
-**3. What are my impediments (or risks or problems)?**  
-Integrating live PayFast APIs requires rigorous testing to ensure no transactions fail or duplicate. We are also refining the logic for the new ratings system to ensure it only triggers upon completion of a verified PayFast transaction.
-
-### Friday, 7 August 2026
-**1. What did I complete since the last standup?**  
-I finalized the secure payment flow. The website now successfully processes payments via PayFast, and all user data—including passwords, PayFast transaction references, and Brevo email verification codes—are securely hashed to protect user privacy. I also hosted the updated version on Netlify for a stable live demo. The admin dashboard is fully operational, allowing for user management and verification oversight.
-
-**2. What am I planning to complete between now and the next standup?**  
-I will finalize the Help Center (FAQ) and ensure the logout functionality redirects securely. The team and I will do a final end-to-end walkthrough, testing the new secure authentication and payment flows to ensure the live demo goes off without a hitch.
-
-**3. What are my impediments (or risks or problems)?**  
-The live payment processing is working, but we need to ensure the confirmation page accurately reflects the PayFast callback status every time. We have thoroughly tested on modern browsers, but are aware that older browsers (like Internet Explorer) might have limitations. We are excited to present the fully secured, operational platform.
-
----
-
-## 📅 Week 5: Final Polish & Presentation Readiness (20 – 23 October 2026)
-
-### Tuesday, 20 October 2026
-**1. What did I complete since the last standup?**  
-Since the core website is already fully functional, I shifted focus to enhancing the existing UI/UX. I refined the navigation bar to ensure seamless routing across all live sections and optimized the existing search bar algorithm so users can filter through the active product database more efficiently.
-
-**2. What am I planning to complete between now and the next standup?**  
-My focus is on polishing the product detail page and ensuring the existing user login and registration flows are perfectly responsive on all mobile devices. I will also begin mapping out integration points for the new secure email verification system we plan to implement.
-
-**3. What are my impediments (or risks or problems)?**  
-The main challenge is ensuring new code commits don't break existing stable features. We are establishing stricter coding standards to manage the shared codebase. Minor CSS adjustments are needed on legacy mobile screens, but nothing is blocking progress.
-
-### Wednesday, 21 October 2026
-**1. What did I complete since the last standup?**  
-I finalized the product detail layouts and confirmed the cart and checkout UI are fully responsive. The existing search functionality is now optimized. As a group, we reviewed the current live site and are making good progress on planning the new secure features.
-
-**2. What am I planning to complete between now and the next standup?**  
-I need to build out the expanded user profile settings (Address, Preferences) and lay the groundwork for the new payment gateway integration. We also need to finalize the architecture for the secure student email verification system.
-
-**3. What are my impediments (or risks or problems)?**  
-We are evaluating the best approach for real-time chat updates without causing server overload. We are also in the planning phase for payment integration, ensuring our existing order database structure can handle real transaction IDs.
-
-### Thursday, 22 October 2026
-**1. What did I complete since the last standup?**  
-I expanded the user profile pages with the new settings options. Most importantly, I successfully integrated Brevo SMTP for our new secure email verification system. New users now receive a 6-digit code generated and hashed on our backend, ensuring only verified CPUT students can access the marketplace.
-
-**2. What am I planning to complete between now and the next standup?**  
-I plan to finalize the integration of the PayFast payment gateway to replace the simulated checkout, allowing real transactions. I also need to complete the 6-digit meetup code generator for safe physical exchanges and ensure all sensitive data (like the new verification codes and user passwords) are cryptographically hashed.
-
-**3. What are my impediments (or risks or problems)?**  
-Integrating live PayFast APIs requires rigorous testing to ensure no transactions fail or duplicate. We are also refining the logic for the new ratings system to ensure it only triggers upon the completion of a verified PayFast transaction.
-
-### Friday, 23 October 2026
-**1. What did I complete since the last standup?**  
-I finalized the secure payment flow. The website now successfully processes payments via PayFast, and all user data—including passwords, PayFast transaction references, and Brevo email verification codes—are securely hashed to protect user privacy. I also hosted the updated version on Netlify for a stable, live demo. The admin dashboard is fully operational, allowing for user management and verification oversight.
-
-**2. What am I planning to complete between now and the next standup?**  
-I will finalize the Help Center (FAQ) and ensure the logout functionality redirects securely. The team and I will do a final end-to-end walkthrough, testing the new secure authentication and payment flows to ensure the live demo goes off without a hitch.
-
-**3. What are my impediments (or risks or problems)?**  
-The live payment processing is working, but we need to ensure the confirmation page accurately reflects the PayFast callback status every time. We have thoroughly tested on modern browsers, but are aware that older browsers (like Internet Explorer) might have limitations. We are excited to present the fully secured, operational platform.
-
----
-
-## 📝 Agile Reflection & Evidence Summary
-
-### Agile Team Charter (Evidence & Reflection)
-Our team charter established clear roles: front-end (Andile), back-end (teammates), and integration/QA. We agreed on shared coding standards, daily standups at 09:00, and a shared GitHub repository. This charter reduced friction and aligned our daily execution, especially when we had to pivot from presentation mode to development mode in Week 3.
-
-### User Stories and Tasks (Evidence & Reflection)
-User stories were written from the CPUT student perspective, e.g., *"As a verified CPUT student, I want to receive a 6-digit email code so that I can trust other users are real students."* Each story was broken into tasks: UI design, API endpoint, database schema, and testing. This granularity allowed us to track progress daily and assign work based on strengths.
-
-### Product Backlog (Evidence & Reflection)
-Our prioritized product backlog included: CPUT email verification (Brevo SMTP), PayFast payment integration, product listing/search, real-time chat, admin dashboard, and meetup code generator. Security features (hashed passwords, JWT tokens, rate limiting) were prioritized early to ensure the platform was trustworthy from day one.
-
-*(Trello Evidence: The screenshot below shows our Trello board where the Product Backlog was tracked and prioritized).*
 ![Product Backlog Trello Board](./trello-product-backlog.png)
 
-### Sprint Backlog (Evidence & Reflection)
-**Sprint 1 (28–31 July):** Core website—homepage, product listing, search, registration/login, chat, responsive design.
-**Sprint 2 (4–7 August):** Security hardening—Brevo SMTP verification, PayFast payment gateway, data hashing, admin dashboard, meetup codes, Netlify deployment.
-**Sprint 3 (20–23 October):** Final polish—Help Center, logout security, end-to-end testing, presentation preparation.
+### Product Backlog: Reflection
+Keeping an ordered Product Backlog stopped us from wasting time on minor visual tweaks before the core system worked. After receiving peer feedback in Week 2, we moved trust and security items—such as CPUT student email verification, password hashing, and PayFast verification—to the top of our priority list. Reviewing the backlog regularly helped us adjust our scope when we ran into technical challenges while still keeping track of everything needed to finish the project.
 
-*(Trello Evidence: The screenshot below shows our active Sprint Backlog and Kanban workflow).*
+---
+
+## 4. Sprint Backlog
+
+### Sprint Backlog: Evidence
+
+We managed our workflow on Trello using a three-column Kanban board (`Product Backlog`, `In progress`, `Completed`) and pulled cards into active work across our sprints:
+
+* **Discovery & Design Phase (14 – 24 July 2026):** Focused on validating the problem and finalizing wireframes. Cards completed: *Discovery & Research*, *Conduct Survey & Data Collection*, *Data Analysis & Insights*, *UX & UI Design*, *Wireframes & Prototyping*, and *UI Design System*.
+* **Sprint 1 – Core Website Build (28 – 31 July 2026):** Focused on delivering a working website where users could register, browse, search, and message sellers. Cards completed: *System Architecture*, *API Design & Planning*, *Frontend Development*, and *Marketplace Functionality*.
+* **Sprint 2 – Security & Payments (4 – 7 August 2026):** Focused on replacing simulated flows with real security and payment tools. Cards completed: *Backend Development*, *Authentication System*, and *Integration* (including Brevo SMTP verification, PayFast integration, cryptographic hashing, meetup codes, and the Admin Dashboard).
+* **Sprint 3 – Final Polish & Deployment (20 – 23 October 2026):** Focused on stability, Help Center content, and final submission readiness. Cards completed: *Testing & Debugging*, *Deployment Preparation*, and *Final Presentation & Submission*.
+
 ![Sprint Backlog Trello Board](./trello-sprint-backlog.png)
 
-### Agile Logbook (Evidence & Reflection)
-This logbook documents daily standups, impediments (e.g., CSS misalignment, PayFast API testing, chat real-time refresh), and continuous improvement. The iterative cycles (plan → build → test → reflect) allowed us to deliver a fully functional, secure marketplace within a tight timeframe. The Week 2 feedback loop (peer review → redesign → re-present) was a turning point that made UniMarket unique and convincing.
+### Sprint Backlog: Reflection
+Breaking the work into short sprints kept us focused on clear weekly goals instead of leaving everything for the end. In Sprint 1, aiming for a working demo by Friday forced us to fix our mobile CSS and search bar bugs quickly. In Sprint 2, dedicating the entire week to security and payments gave us enough time to test Brevo email codes and PayFast callbacks properly without breaking the pages we had already built.
+
+---
+
+## 5. Agile Logbook
+
+### Agile Logbook: Evidence
+
+#### Week 1: Presentation Preparation & Initial Pitch (14 – 17 July 2026)
+
+**Tuesday, 14 July 2026**  
+* **Completed:** Met as a team to plan the UniMarket pitch, reviewed the slide outline, and divided speaking sections.  
+* **Next:** Write my section of the slides, practice my delivery, and confirm alignment with the group.  
+* **Impediments:** Slow replies in the group chat caused delays, and sharing slide files back and forth caused minor formatting shifts.
+
+**Wednesday, 15 July 2026**  
+* **Completed:** Finished my slides, combined everyone's sections, and ran through the presentation several times to check timing.  
+* **Next:** Deliver my section clearly during class and help teammates if any technical issues come up.  
+* **Impediments:** Our class timetables clashed, making it hard to find a time when all five of us could rehearse together.
+
+**Thursday, 16 July 2026**  
+* **Completed:** Presented the UniMarket concept to the class, explaining how the platform makes campus buying and selling safer and cheaper.  
+* **Next:** Review the feedback we received and note what we can improve in our next presentation.  
+* **Impediments:** Minor file-opening delays before presenting added unnecessary stress.
+
+**Friday, 17 July 2026**  
+* **Completed:** Held a team debrief to discuss what went well and where our communication fell short.  
+* **Next:** Start preparing earlier next week and keep all project files in one shared folder.  
+* **Impediments:** None.
+
+---
+
+#### Week 2: Feedback, Redesign & Second Presentation (21 – 24 July 2026)
+
+**Tuesday, 21 July 2026**  
+* **Completed:** Reviewed peer feedback from our first pitch and started updating our slides to make UniMarket's value clearer.  
+* **Next:** Finish revising my slides and research simple, student-friendly e-commerce layouts.  
+* **Impediments:** Balancing all the peer suggestions without overcrowding our slides.
+
+**Wednesday, 22 July 2026**  
+* **Completed:** Shared updated slides with the group and brainstormed core features: seller ratings, in-app chat, and clean category navigation.  
+* **Next:** Sketch rough wireframes for the main screens and check in on teammates' progress.  
+* **Impediments:** Deciding which features we could realistically build within our timeframe.
+
+**Thursday, 23 July 2026**  
+* **Completed:** Created initial wireframe sketches for the homepage, marketplace, and product detail screens and gathered team feedback.  
+* **Next:** Turn the sketches into clean digital wireframes and rehearse the updated presentation.  
+* **Impediments:** Agreeing on a consistent color scheme and layout style across all screens.
+
+**Friday, 24 July 2026**  
+* **Completed:** Finalized the digital wireframes, completed our full presentation run-through, and incorporated user ratings and messaging into the prototype flow.  
+* **Next:** Practice answering potential Q&A questions about how our platform works.  
+* **Impediments:** None.
+
+---
+
+#### Week 3: Sprint 1 – Building the Core Website (28 – 31 July 2026)
+
+**Tuesday, 28 July 2026**  
+* **Completed:** Kicked off development, set up our shared GitHub repository and local environments, and divided coding tasks.  
+* **Next:** Build the homepage layout, navigation bar, and initial product listing page.  
+* **Impediments:** A few teammates had local environment setup issues, which we resolved together.
+
+**Wednesday, 29 July 2026**  
+* **Completed:** Finished the homepage and product listing pages, added a search bar, and started building the product detail page.  
+* **Next:** Complete the product detail page, start the login/registration screens, and check layouts on mobile viewports.  
+* **Impediments:** CSS elements were misaligning on smaller mobile screens, and the search bar needed debugging.
+
+**Thursday, 30 July 2026**  
+* **Completed:** Fixed the mobile CSS alignment bugs, got the search filter working, finished the login/registration UI, and helped debug the chat screen.  
+* **Next:** Test all pages together and fix any remaining bugs before our live demo.  
+* **Impediments:** Login sessions occasionally dropped, and chat messages required manual refreshing to appear.
+
+**Friday, 31 July 2026**  
+* **Completed:** Fixed the login session and chat refresh bugs, tested the full user journey, and updated our presentation for a live demo.  
+* **Next:** Rehearse the live demo flow and prepare for technical questions.  
+* **Impediments:** Concern about Wi-Fi stability during the live demonstration.
+
+---
+
+#### Week 4: Sprint 2 – Security Hardening & Payment Integration (4 – 7 August 2026)
+
+**Tuesday, 4 August 2026**  
+* **Completed:** Refined navigation routing across all pages and improved search filtering speed on the active product list.  
+* **Next:** Polish the product detail layout and map out frontend fields for student email verification.  
+* **Impediments:** Making sure new commits did not break existing working pages on the shared branch.
+
+**Wednesday, 5 August 2026**  
+* **Completed:** Finalized responsive layouts for the cart and checkout screens and reviewed the database fields needed for order tracking.  
+* **Next:** Build the user profile settings view and prepare the frontend checkout form for PayFast.  
+* **Impediments:** Ensuring our database order table properly stores external payment transaction references.
+
+**Thursday, 6 August 2026**  
+* **Completed:** Added profile settings options, connected the frontend registration flow to the Brevo SMTP 6-digit email verification API, and started the Admin Dashboard UI.  
+* **Next:** Complete the PayFast checkout flow and test the 6-digit meetup confirmation code screen.  
+* **Impediments:** Testing PayFast sandbox callbacks thoroughly to prevent duplicate order entries.
+
+**Friday, 7 August 2026**  
+* **Completed:** Completed PayFast checkout integration, verified that passwords, OTP codes, and transaction references are hashed, finished the Admin Dashboard, and deployed a test build to Netlify.  
+* **Next:** Build the Help Center (FAQ) page and verify secure logout redirects.  
+* **Impediments:** Confirming that the order confirmation screen updates reliably after every PayFast callback.
+
+---
+
+#### Week 5: Sprint 3 – Final Polish & Presentation Readiness (20 – 23 October 2026)
+
+**Tuesday, 20 October 2026**  
+* **Completed:** Audited our live Netlify site for broken links or styling glitches and drafted the Help Center (FAQ) page explaining email verification and meetup codes.  
+* **Next:** Test registration, login, and password reset across both desktop and mobile browsers.  
+* **Impediments:** Minor session token persistence issue on page reload, which we patched in the auth middleware.
+
+**Wednesday, 21 October 2026**  
+* **Completed:** Finished the Help Center (FAQ) page, verified that logout clears user sessions cleanly, and checked all 16 Trello cards against our live features.  
+* **Next:** Run full end-to-end tests covering item uploads, chat, PayFast checkout, and seller ratings.  
+* **Impediments:** Handling edge cases like empty form submissions and oversized image uploads.
+
+**Thursday, 22 October 2026**  
+* **Completed:** Added input and file-size validation, completed full end-to-end testing from signup to seller rating, and verified our MySQL backups.  
+* **Next:** Finalize our GitHub portfolio documentation and run a timed rehearsal of our final presentation.  
+* **Impediments:** None.
+
+**Friday, 23 October 2026**  
+* **Completed:** Verified all screenshots and sections in our GitHub portfolio and completed our final team walkthrough of the live UniMarket platform.  
+* **Next:** Submit the GitHub Pages link on Blackboard and present our final project.  
+* **Impediments:** None.
+
+### Agile Logbook: Reflection
+Writing daily standup entries helped us spot problems early instead of letting them pile up before presentations. Looking back across the five weeks, I can see clear progress—from early communication hiccups in Week 1 and mobile CSS issues in Week 3, to smoothly integrating Brevo email verification and PayFast payments in Week 4. Recording our blockers each day forced us to solve technical issues immediately, and acting on peer feedback in Week 2 turned UniMarket into a much stronger, safer product for students.
