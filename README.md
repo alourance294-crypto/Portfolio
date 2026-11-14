@@ -178,7 +178,7 @@ We wrote our user stories from the perspective of CPUT students and broke each o
 * **Admin Oversight (US-07):** As an administrator, I want a dashboard to view verification logs and manage users so that the platform stays safe.  
   * *Tasks (Backend & Testing – 35/35 completed):* Add role-based access middleware, build admin endpoints, and test user/verification management.
 
-![Trello User Story and Tasks](./trello-user-stories.png)
+![Trello User Story and Tasks](./trello-product-backlog.png)
 
 ### User Stories and Tasks: Reflection
 Writing user stories from a student's point of view kept us focused on real problems—like avoiding scams and finding cheaper study gear—instead of adding unnecessary features. Breaking each story into small Trello checklist items made bigger features like PayFast integration and email verification feel much less overwhelming. It also helped us realize in Week 2 which features were realistic for our skill level and allowed us to assign tasks based on what each teammate was best at.
