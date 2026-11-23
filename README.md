@@ -142,7 +142,7 @@ Our goal was to design and build UniMarket, a verified student-to-student market
 * **Andile Nhleko (AN) – Researcher (and Frontend/UI Implementation):** Led student needs and competitor research, helped shape user stories, and built the React + Vite frontend pages and responsive layouts.
 * **Karabo Mpalakane (NM) – Writer/Editor (and Documentation/Integrations):** Wrote and edited project documentation, Help Center content, and structured our technical specifications and backend integrations.
 * **Aliziwe Ncoko (AN) – Presenter (and User Engagement):** Led pitch structure, slide refinement, live demo walkthroughs, and incorporated peer review feedback.
-* **Lihle Tuta (LT) – Designer (and System/UI Architecture):** Created wireframes, visual design system tokens, layouts, and backend/database structural design[cite: 1, 10].
+* **Lihle Tuta (LT) – Designer (and System/UI Architecture):** Created wireframes, visual design system tokens, layouts, and backend/database structural design.
 
 **Working Agreements**  
 * **Daily Check-Ins:** Quick 15-minute standups every morning at 09:00 to share progress and flag blockers early.
@@ -157,7 +157,34 @@ Putting our Team Charter together early helped us avoid confusion once coding st
 
 ---
 
-## 2. User Stories and Tasks
+### 2. Evidence Selection & Critical Evaluation (Select)
+From our daily logs, key artifacts were selected as primary evidence of Agile execution:
+
+1. **App Navigation & Core Interface Screens (July 2026):** Proof of user-centered design planning, breaking down complex features into intuitive user paths (Sign Up, Home Page, Product Listings, Profile).
+2. **Trello Board & Backlogs (July–August 2026):** Shared evidence of the team’s completed tasks, including UX & UI Design, Discovery & Research, and 100% completion of 16 prioritized Product Backlog cards. **[View the live UniMarket Trello Board](https://trello.com/b/HI2GaCZ5/unimarket)**
+3. **Agile Team Charter (July 2026):** Our social contract defining team roles and working agreements (e.g., 09:00 daily standups, GitHub workflow).
+
+**Evidence: UniMarket Interface Screenshots**
+
+*Sign Up: Create your account today and join UniMarket to discover affordable study materials from fellow students.*
+![UniMarket Sign Up Page](./Sgnup.png)
+
+*Home Page: Where students see available products.*
+![UniMarket Home Page](./Home_page.png)
+
+*Product Listings: Where students browse books, laptops and other study materials.*
+![UniMarket Product Listings](./Product_List.png)
+
+*Profile: Where students view and manage their account.*
+![UniMarket Profile Page](./Profile%20.png)
+
+**Evidence: Trello Boards**
+![Trello Product Backlog](./trello-product-backlog.png)
+![Trello Sprint Backlog](./trello-sprint-backlog.png)
+
+---
+
+## 3. User Stories and Tasks
 
 ### User Stories and Tasks: Evidence
 
@@ -185,11 +212,13 @@ Writing user stories from a student's point of view kept us focused on real prob
 
 ---
 
-## 3. Product Backlog
+## 4. Product Backlog
 
 ### Product Backlog: Evidence
 
 Our Product Backlog consisted of 16 prioritized Trello cards covering research, design, development, testing, and deployment. Security and core marketplace functions were prioritized first, and all 16 cards reached 100% checklist completion:
+
+*View our live, interactive Trello board here: **[UniMarket Trello Board](https://trello.com/b/HI2GaCZ5/unimarket)***
 
 1. **Discovery & Research (19/19):** Defined project goals, scope, target users, competitor comparison, user personas, and user journeys.
 2. **Conduct Survey & Data Collection (18/18):** Created the student survey, shared links, collected responses, removed duplicates, and organized preferences.
@@ -215,11 +244,11 @@ Keeping an ordered Product Backlog stopped us from wasting time on minor visual 
 
 ---
 
-## 4. Sprint Backlog
+## 5. Sprint Backlog
 
 ### Sprint Backlog: Evidence
 
-We managed our workflow on Trello using a three-column Kanban board (`Product Backlog`, `In progress`, `Completed`) and pulled cards into active work across our sprints:
+We managed our workflow on Trello using a three-column Kanban board (`Product Backlog`, `In progress`, `Completed`) and pulled cards into active work across our sprints. **[View the live UniMarket Trello Board](https://trello.com/b/HI2GaCZ5/unimarket)**
 
 * **Discovery & Design Phase (14 – 24 July 2026):** Focused on validating the problem and finalizing wireframes. Cards completed: *Discovery & Research*, *Conduct Survey & Data Collection*, *Data Analysis & Insights*, *UX & UI Design*, *Wireframes & Prototyping*, and *UI Design System*.
 * **Sprint 1 – Core Website Build (28 – 31 July 2026):** Focused on delivering a working website where users could register, browse, search, and message sellers. Cards completed: *System Architecture*, *API Design & Planning*, *Frontend Development*, and *Marketplace Functionality*.
@@ -233,9 +262,18 @@ Breaking the work into short sprints kept us focused on clear weekly goals inste
 
 ---
 
-## 5. Agile Logbook
+## 6. Agile Logbook
 
 ### Agile Logbook: Evidence
+
+**📄 Download the Original Agile Logbook PDFs:**
+*   [View Week 1 Logbook (14 - 17 July)](./Logbook_Week1.pdf)
+*   [View Week 2 Logbook (21 - 24 July)](./Logbook_Week2.pdf)
+*   [View Week 3 Logbook (28 - 31 July)](./Logbook_Week3_July28-31.pdf)
+*   [View Week 4 Logbook (4 - 7 August)](./Logbook_Week4_Aug4-7.pdf)
+*   [View Week 5 Logbook (20 - 23 October)](./Logbook_Week5_Oct20-23.pdf)
+
+*(The text below is a summary of the daily standups from the PDF files above)*
 
 #### Week 1: Presentation Preparation & Initial Pitch (14 – 17 July 2026)
 
@@ -357,3 +395,4 @@ Breaking the work into short sprints kept us focused on clear weekly goals inste
 
 ### Agile Logbook: Reflection
 Writing daily standup entries helped us spot problems early instead of letting them pile up before presentations. Looking back across the five weeks, I can see clear progress from early communication hiccups in Week 1 and mobile CSS issues in Week 3, to smoothly integrating Brevo email verification and PayFast payments in Week 4. Recording our blockers each day forced us to solve technical issues immediately, and acting on peer feedback in Week 2 turned UniMarket into a much stronger, safer product for students.
+
